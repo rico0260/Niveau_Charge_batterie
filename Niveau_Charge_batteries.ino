@@ -23,6 +23,7 @@ void loop() {
      
   //Exemple avec une tension
   int Niveau = niveauCB.getChargeLevel_18650( c );
+  //int Niveau2 = niveauCB.getChargeLevel_Lead( c );
 
   Serial.print("Tension : ");
   Serial.print(c, 3);

@@ -31,7 +31,7 @@
 
 #include <Arduino.h>
 
-class Rico0260_ChargeLevel 
+class Rico0260_ChargeLevel
 {
   public:
     /*
@@ -44,11 +44,14 @@ class Rico0260_ChargeLevel
     * @return the calculated battery level
     */
     int getChargeLevel_18650(double volts);
+    //int getChargeLevel_Lead(double volts);
   
   private:
     double _TableauTensions_18650[101]; //Tableau des tensions
+    //double _TableauTensions_Lead[101]; //Tableau des tensions
   
     void _initArray_18650(void);
+    //void _initArray_Lead(void);
 };
 
 #endif
