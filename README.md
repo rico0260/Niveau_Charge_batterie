@@ -1,2 +1,4 @@
-# Niveau_Charge_batterie_lithium
-Librairie pour avoir le niveau de charge des batteries lithium
+# Niveau_Charge_batterie
+Librairie pour avoir le niveau de charge des batteries :
+* Lithium
+* Autres à ajouter
