@@ -26,29 +26,29 @@
  *  Battery charge level for Lithium 18650
  */
 
-#ifndef Rico0260_ChargeLevel_18650_h
-#define Rico0260_ChargeLevel_18650_h
+#ifndef Rico0260_ChargeLevel_h
+#define Rico0260_ChargeLevel_h
 
-#include "Arduino.h"
+#include <Arduino.h>
 
-class Rico0260_ChargeLevel_18650
+class Rico0260_ChargeLevel 
 {
-public:
-  /*
-  * Constructor
-  */
-  Rico0260_ChargeLevel_18650();
-
-  /*
-  * Get the battery level (0-100)
-  * @return the calculated battery level
-  */
-  int getChargeLevel_18650(double volts);
-
-private:
-  double _TableauTensions[101]; //Tableau des tension
-
-  void _initTableauTensions();
+  public:
+    /*
+    * Constructor
+    */
+    Rico0260_ChargeLevel(void);
+  
+    /*
+    * Get the battery level (0-100)
+    * @return the calculated battery level
+    */
+    int getChargeLevel_18650(double volts);
+  
+  private:
+    double _TableauTensions_18650[101]; //Tableau des tensions
+  
+    void _initArray_18650(void);
 };
 
 #endif
